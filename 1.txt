@@ -1,0 +1,22 @@
+eliminar epsilon
+E -> 0A0 | 1B1 | BB
+A -> C
+B -> S | A
+C -> S
+eliminar unarias
+E -> 0A0 | 1B1 | BB
+A -> S
+B -> S | S
+C -> S
+eliminar inaccesibles
+E -> 0A0 | 1B1 | BB
+sustituir terminales
+E -> x0 | x1 | x2
+x0 -> 0A0
+x1 -> 1B1
+x2 -> BB
+sustituir terminales mayores a 3
+E -> x0 | x1 | x2
+x0 -> 0A0
+x1 -> 1B1
+x2 -> BB

@@ -1,0 +1,35 @@
+eliminar epsilon
+E -> aAa | bBb
+A -> C | a
+B -> C | b
+C -> CDE | CD | DE | D
+D -> A | B | ab
+eliminar inaccesibles
+E -> aAa | bBb
+A -> C | a
+B -> C | b
+C -> CDE | CD | DE | D
+D -> A | B | ab
+sustituir terminales
+E -> x0 | x1
+A -> C | x2
+B -> C | x3
+C -> CDE | CD | DE | D
+D -> A | B | x4
+x0 -> aAa
+x1 -> bBb
+x2 -> a
+x3 -> b
+x4 -> ab
+sustituir terminales mayores a 3
+E -> x0 | x1
+A ->  x2
+B ->  x3
+C -> Cc0 | CD | DE
+D -> x4
+x0 -> aAa
+x1 -> bBb
+x2 -> a
+x3 -> b
+x4 -> ab
+c0 -> DE
